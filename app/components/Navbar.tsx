@@ -6,34 +6,35 @@ import { FaTwitter } from "react-icons/fa";
 import { IoLogoGoogleplus } from "react-icons/io";
 import logo from "../assets/images/icons/logo.svg";
 import { FaSearch } from "react-icons/fa";
+import { IoCart } from "react-icons/io5";
+import { FaHeart } from "react-icons/fa";
 
 const Navbar = () => {
   return (
     <header>
       {/* <!-- header start here--> */}
-      <div className="bg-navyblue text-white p-[11px] text-[19px]">
+      <div className="bg-navyblue text-white p-[8px] text-[15px]">
         <div className="flex justify-start md:justify-between items-center">
-          <div className="ml-2 md:ml-[70px]">
+          <div className="ml-2 md:ml-[140px]">
             <p>
               Free Shipping for all Order of <strong>$99</strong>
             </p>
           </div>
-          <div className="md:flex hidden justify-center gap-[40px] mr-[50px] items-center">
+          <div className="md:flex hidden justify-center gap-[32px] mr-[140px] items-center">
             <a href="#">
               {" "}
-              <FaFacebookF className="h-5 w-5" />{" "}
+              <FaFacebookF className="text-base" />{" "}
             </a>
             <a href="#">
               {" "}
-              <FaTwitter className="h-5 w-5" />{" "}
+              <FaTwitter className="text-base" />{" "}
+            </a>
+            <a href="#">
+              <FaInstagram className="text-base"/>
             </a>
             <a href="#">
               {" "}
-              <FaInstagram className="h-5 w-5" />{" "}
-            </a>
-            <a href="#">
-              {" "}
-              <IoLogoGoogleplus className="h-7 w-7" />
+              <IoLogoGoogleplus className="text-xl" />
             </a>
           </div>
         </div>
@@ -41,32 +42,30 @@ const Navbar = () => {
 
       {/* <!-- Header logo --> */}
       <div className="">
-        <div className="flex justify-evenly items-center">
+        <div className="flex justify-around items-center h-32">
           <a href="#">
-            <Image src={logo} width={220} height={220} alt="logo" />
+            <Image src={logo} width={180} height={180} alt="logo" />
           </a>
 
-          
-            <div className="header-bottom__search">
-              <form>
-                <input
-                  placeholder="Search..."
-                  type="search"
-                  name="s"
-                  title="Search"
-                  value=""
-                  required
-                />
-                <button type="submit">
-                  <FaSearch/ >
-                </button>
-              </form>
-            </div>
+          <div>
+            <form className="flex items-center justify-center">
+              <input className="px-28 py-2.5 rounded-2xl rounded-r-none outline-light-grey border-gray-500 border-2 "
+                placeholder="Search..."
+                type="search"
+                name="s"
+                title="Search"
+                required
+              />
+              <button className="py-2.5 px-6 bg-navyblue rounded-3xl " type="submit">
+                <FaSearch className="text-2xl font-light text-white" />
+              </button>
+            </form>
+          </div>
 
-            <div className="header-bottom__signup__cart">
-              <div className="header-bottom__signsup">
-                <a href="#">Sign in / Sign up</a>
-                {/* <div className="login">
+          <div className="flex justify-center gap-2 font-semibold items-center">
+            <div className="header-bottom__signsup">
+              <a className="uppercase text-sm" href="#">Sign in / Sign up</a>
+              {/* <div className="login">
                     <form className="register-form">
                       <div className="form-head">
                         <span className="sign">Sign in</span>
@@ -107,27 +106,26 @@ const Navbar = () => {
                       </div>
                     </form>
                   </div> */}
-              </div>
-
-              <div className="header-bottom__hert">
-                <a href="#">
-                  {" "}
-                  <i className="fa fa-heart"></i>
-                </a>
-              </div>
-              <div className="header-bottom__cart">
-                <a href="#">
-                  <i className="fa fa-shopping-cart fa-2x"></i>
-                  <span className="header-bottom__cart_count">0</span>
-                  <span className="header-bottom__cart_amount">$0.00</span>
-                </a>
-                {/* <div className="cart-items">
-                    <p>No Items In Your Cart</p>
-                  </div> */}
-              </div>
             </div>
 
-            {/* <nav>
+            <div className="header-bottom__hert">
+              <a href="#">
+                {" "}
+                <FaHeart className="text-2xl text-medium-grey" />
+              </a>
+            </div>
+            <div className="flex justify-center gap-2 items-center">
+              <IoCart className="text-3xl" />
+              {/* <span className="header-bottom__cart_count">0</span> */}
+              <span className="header-bottom__cart_amount">$0.00</span>
+
+              {/* <div className="cart-items">
+                    <p>No Items In Your Cart</p>
+                  </div> */}
+            </div>
+          </div>
+
+          {/* <nav>
                 <ul className="menu">
                   <li className="menu__dropdown">
                     <a href="#home" className="active">
@@ -222,11 +220,11 @@ const Navbar = () => {
                 </ul>
                 <span className="closeBtn">x</span>
               </nav> */}
-          </div>
-          {/* <div className="nav_icon">
+        </div>
+        {/* <div className="nav_icon">
                     <i className="fa fa-bars"></i>
                  </div> */}
-        </div>
+      </div>
     </header>
   );
 };
