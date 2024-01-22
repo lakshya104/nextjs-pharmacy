@@ -42,7 +42,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header>
+    <header className="w-[100%]">
       {/* <!-- header start here--> */}
       <div className="bg-cyan-500 text-white p-[8px] text-[15px]">
         <div className="flex justify-start md:justify-between items-center">

@@ -11,10 +11,11 @@ const Banner = () => {
     <section className="flex items-center justify-center flex-col">
       <FeaturesBanner />
 
-      <div className="bg-[url('./assets/images/h1-slider01.jpg')] w-screen py-8">
-        <div className=" flex justify-center items-center space-x-40 space-y-8">
+      <div className="bg-[url('./assets/images/h1-slider01.jpg')] w-[100%] py-8">
+        <div className="flex justify-center md:flex-row flex-col items-center md:space-x-40 space-y-8">
           <div className="banner_slider__image">
             <Image
+            className="w-[300px] h-[300px] md:w-[500px] md:h-[500px]"
               width={600}
               height={600}
               src={bannerFirst}
@@ -22,11 +23,11 @@ const Banner = () => {
             />
           </div>
 
-          <div className="flex justify-center items-center flex-col space-y-3">
-            <h2 className="text-6xl text-white font-bold">
+          <div className="flex justify-center md:items-center items-start flex-col space-y-3">
+            <h2 className="md:text-6xl text-4xl text-white font-bold">
               Flat 25% off <br /> Medicine Order
             </h2>
-            <div className="flex justify-between items-center w-96">
+            <div className="flex justify-between items-center space-x-16 md:space-x-24">
               <p className="text-white font-bold">
                 Code: SAVE18
               </p>
@@ -58,7 +59,7 @@ const Banner = () => {
                 <p className="text-white font-bold">Free delivery</p>
               </div>
              </div>
-              <div className="mt-10">
+              <div className="mt-10 md:block hidden">
                 <Image
                   src={bannerCorner}
                   width={250}
