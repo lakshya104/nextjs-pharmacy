@@ -7,7 +7,7 @@ const ProductCards = () => {
         <div className="bg-[url('./assets/images/h1-banner01.jpg')] bg-no-repeat bg-cover  h-[40vh] lg:h-[60vh] w-[100%] lg:w-[30%] rounded-lg">
           <div className="ml-8 w-[50%] mt-10 flex justify-center items-start flex-col">
             <div className="flex justify-center items-start flex-col space-y-6">
-              <h2 className=" lg:text-5xl text-4xl font-bold">
+              <h2 className=" lg:text-5xl text-2xl font-bold">
                 Naturally <br /> Good
               </h2>
               <p className="md:text-lg text-xl font-semibold">Up To 25% Off</p>
@@ -22,7 +22,7 @@ const ProductCards = () => {
 
                 <a
                   href="#"
-                  className="text-white md:text-lg text-xl font-semibold md:font-bold"
+                  className="text-sm font-medium"
                 >
                   SHOP NOW
                 </a>
@@ -32,15 +32,15 @@ const ProductCards = () => {
         </div>
         <div className="h-[40vh] lg:h-[60vh] w-[100%] lg:w-[30%] flex justify-center space-y-8 md:justify-between flex-col items-center">
           <div className="bg-[url('./assets/images/h1-banner02.jpg')] bg-no-repeat bg-cover rounded-lg w-[100%] h-[45%]">
-            <div className="mr-5 mt-10 flex justify-center items-end flex-col">
-              <div className="flex justify-center items-start flex-col space-y-10">
+            <div className="mr-10 mt-10 flex justify-center items-end flex-col">
+              <div className="flex justify-center items-start flex-col space-y-2 md:space-y-10">
                 <div>
                   {" "}
-                  <h3 className=" lg:text-sm text-xl font-medium uppercase">
+                  <h3 className=" text-sm font-medium uppercase">
                     {" "}
                     Daily Health
                   </h3>
-                  <h2 className=" lg:text-2xl text-3xl font-bold">
+                  <h2 className=" text-xl font-bold">
                     Essentials
                   </h2>
                 </div>
@@ -55,7 +55,7 @@ const ProductCards = () => {
 
                   <a
                     href="#"
-                    className="text-white md:text-lg text-xl font-semibold md:font-bold"
+                    className=" text-sm font-medium uppercase"
                   >
                     SHOP NOW
                   </a>
@@ -65,16 +65,16 @@ const ProductCards = () => {
           </div>
           <div className="bg-[url('./assets/images/h1-banner03.jpg')] bg-no-repeat bg-cover rounded-lg w-[100%] h-[45%]">
             <div className="ml-5 mt-10 flex justify-center items-start flex-col">
-              <div className="flex justify-center items-start flex-col space-y-10">
+              <div className="flex justify-center items-start flex-col space-y-2 md:space-y-10">
                 <div>
                   {" "}
-                  <h3 className=" lg:text-sm text-xl font-medium uppercase">
+                  <h3 className=" text-sm font-medium uppercase">
                     {" "}
                     MEDICINES
                   </h3>
-                  <h2 className=" lg:text-2xl text-3xl font-bold">Medfinder</h2>
+                  <h2 className=" text-xl font-bold">Medfinder</h2>
                 </div>
-                <div className="hover:translate-x-1 flex justify-between items-center">
+                <div className="flex justify-between items-center">
                   Price:{" "}
                   <b>
                     <sup>$</sup>290<sup>99</sup>
@@ -87,7 +87,7 @@ const ProductCards = () => {
         <div className="bg-[url('./assets/images/h1-banner04.jpg')] bg-no-repeat bg-cover h-[40vh] lg:h-[60vh] w-[100%] lg:w-[30%] rounded-lg">
           <div className="ml-8 mt-10 flex justify-center items-start flex-col">
             <div className="flex justify-center items-start flex-col space-y-6">
-              <h2 className=" lg:text-5xl text-4xl font-bold">
+              <h2 className=" lg:text-5xl text-2xl font-bold">
                 Healthcare <br /> Products
               </h2>
               <p className="md:text-lg text-xl font-semibold">Up To 30% Off</p>
@@ -102,7 +102,7 @@ const ProductCards = () => {
 
                 <a
                   href="#"
-                  className="text-white md:text-lg text-xl font-semibold md:font-bold"
+                  className="text-sm font-medium"
                 >
                   SHOP NOW
                 </a>
