@@ -9,15 +9,6 @@ const Services = () => {
   return (
     <section className="bg-gray-100 w-[100%] py-10 flex justify-center items-center">
       <div className="flex justify-around w-[95%] items-center  flex-wrap">
-      <div className="  px-6 py-4">
-          <FeaturesBannerCard
-            title="Medicine"
-            desc="Over 25000 products"
-            iconBg="bg-indigo-900"
-          >
-            <FaHeartbeat className="text-white font-black text-2xl" />
-          </FeaturesBannerCard>
-        </div>
         <div className="px-6 py-4 flex items-center justify-center">
           <FeaturesBannerCard
             title="Medicine"

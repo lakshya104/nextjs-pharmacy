@@ -10,7 +10,7 @@ const ProductCards = () => {
               <h2 className=" lg:text-5xl text-2xl font-bold">
                 Naturally <br /> Good
               </h2>
-              <p className="md:text-lg text-xl font-semibold">Up To 25% Off</p>
+              <p className="text-lg font-semibold">Up To 25% Off</p>
               <div className="hover:translate-x-1 flex justify-between items-center">
                 <a
                   href="#"
@@ -32,7 +32,7 @@ const ProductCards = () => {
         </div>
         <div className="h-[40vh] lg:h-[60vh] w-[100%] lg:w-[30%] flex justify-center space-y-8 md:justify-between flex-col items-center">
           <div className="bg-[url('./assets/images/h1-banner02.jpg')] bg-right bg-no-repeat bg-cover rounded-lg w-[100%] h-[45%]">
-            <div className="mr-10 mt-10 flex justify-center items-end flex-col">
+            <div className="md:mr-10 mr-4 mt-10 flex justify-center items-end flex-col">
               <div className="flex justify-center items-start flex-col space-y-2 md:space-y-10">
                 <div>
                   {" "}
@@ -86,11 +86,11 @@ const ProductCards = () => {
         </div>
         <div className="bg-[url('./assets/images/h1-banner04.jpg')] bg-no-repeat bg-cover h-[40vh] lg:h-[60vh] w-[100%] lg:w-[30%] rounded-lg">
           <div className="ml-8 mt-10 flex justify-center items-start flex-col">
-            <div className="flex justify-center items-start flex-col space-y-6">
+            <div className="flex justify-center items-start flex-col md:space-y-6 space-y-4">
               <h2 className=" lg:text-5xl text-2xl font-bold">
                 Healthcare <br /> Products
               </h2>
-              <p className="md:text-lg text-xl font-semibold">Up To 30% Off</p>
+              <p className="text-lg font-semibold">Up To 30% Off</p>
               <div className="hover:translate-x-1 flex justify-between items-center">
                 <a
                   href="#"
