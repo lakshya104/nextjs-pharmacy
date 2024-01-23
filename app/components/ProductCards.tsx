@@ -31,7 +31,7 @@ const ProductCards = () => {
           </div>
         </div>
         <div className="h-[40vh] lg:h-[60vh] w-[100%] lg:w-[30%] flex justify-center space-y-8 md:justify-between flex-col items-center">
-          <div className="bg-[url('./assets/images/h1-banner02.jpg')] bg-no-repeat bg-cover rounded-lg w-[100%] h-[45%]">
+          <div className="bg-[url('./assets/images/h1-banner02.jpg')] bg-right bg-no-repeat bg-cover rounded-lg w-[100%] h-[45%]">
             <div className="mr-10 mt-10 flex justify-center items-end flex-col">
               <div className="flex justify-center items-start flex-col space-y-2 md:space-y-10">
                 <div>
