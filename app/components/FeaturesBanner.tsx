@@ -7,7 +7,7 @@ import { AiTwotoneMedicineBox } from "react-icons/ai";
 
 const FeaturesBanner = () => {
   return (
-    <div className="-z-10 hidden lg:flex justify-evenly items-center h-28 bg-gray-100 w-[100%]">
+    <div className=" hidden lg:flex justify-evenly items-center h-28 bg-gray-100 w-[100%]">
       <div className="border-r border-gray-300 px-6 py-4">
         <div className="flex justify-center items-center space-x-10 group">
           <a href="#">

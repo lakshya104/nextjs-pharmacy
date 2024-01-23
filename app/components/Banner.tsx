@@ -11,11 +11,11 @@ const Banner = () => {
     <section className="flex items-center justify-center flex-col">
       <FeaturesBanner />
 
-      <div className="bg-[url('./assets/images/h1-slider01.jpg')] w-[100%] py-8">
+      <div className="bg-[url('./assets/images/h1-slider01.jpg')] w-[100%] py-8 bg-no-repeat bg-cover">
         <div className="flex justify-center md:flex-row flex-col items-center md:space-x-40 space-y-8">
           <div className="banner_slider__image">
             <Image
-            className="w-[300px] h-[300px] md:w-[500px] md:h-[500px]"
+            className="w-[300px] h-[300px] md:w-[600px] md:h-[500px]"
               width={600}
               height={600}
               src={bannerFirst}
@@ -53,7 +53,7 @@ const Banner = () => {
                 <p className="text-white font-bold">Win big offers</p>
               </div>
               <div className="flex items-center justify-center">
-              <div className="p-3 rounded-full bg-white mr-2">
+              <div className="p-3 rounded-full bg-white mr-3">
                   <TbTruckDelivery className="text-cyan-500 text-3xl" />
                 </div>
                 <p className="text-white font-bold">Free delivery</p>
