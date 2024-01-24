@@ -8,7 +8,7 @@ import { AiTwotoneMedicineBox } from "react-icons/ai";
 const Services = () => {
   return (
     <section className="bg-gray-100 w-[100%] py-10 flex justify-center items-center">
-      <div className="flex justify-around w-[95%] items-center  flex-wrap">
+      <div className="flex justify-around w-[95%] items-center flex-col md:flex-row flex-wrap">
         <div className="px-6 py-4 flex items-center justify-center">
           <FeaturesBannerCard
             title="Medicine"

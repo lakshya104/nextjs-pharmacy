@@ -9,6 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import SingleProductCard from "./SingleProductCard";
+import products from "../staticData";
 
 const DailyDeals = () => {
   return (
@@ -20,7 +21,7 @@ const DailyDeals = () => {
         </span>
       </div>
 
-      <div>
+      <div className="flex items-center justify-center">
         <ShadcnCarousel />
       </div>
     </div>
@@ -41,19 +42,31 @@ export function ShadcnCarousel() {
           delay: 2000,
         }),
       ]}
-      className="w-full max-w-xs"
+      className="w-[200px] md:w-[750px] lg:w-[1024px] m-auto "
     >
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
-          <CarouselItem key={index}>
+        {products.map((item, index) => (
+          <CarouselItem
+            key={index}
+            className="sm:basis-[100%] md:basis-1/2 lg:basis-1/3"
+          >
             <div className="p-1">
-              <SingleProductCard />
+              <SingleProductCard
+                image={item.image}
+                imageAlt={item.imageAlt}
+                discount={item.discount}
+                category={item.category}
+                subCategory={item.subCategory}
+                productName={item.productName}
+                mrp={item.mrp}
+                actualPrice={item.actualPrice}
+              />
             </div>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      <CarouselPrevious className="lg:block hidden" />
+      <CarouselNext className="lg:block  hidden" />
     </Carousel>
   );
 }

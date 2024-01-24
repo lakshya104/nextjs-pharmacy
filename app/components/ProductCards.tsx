@@ -4,7 +4,7 @@ const ProductCards = () => {
   return (
     <section className="bg-gray-100 w-[100%]">
       <div className="flex items-center justify-center text-white md:flex-row flex-col p-7 md:p-5 md:space-y-0 space-y-8 md:space-x-8">
-        <div className="bg-[url('./assets/images/h1-banner01.jpg')] bg-no-repeat bg-cover  h-[40vh] lg:h-[60vh] w-[100%] lg:w-[30%] rounded-lg">
+        <div className="bg-[url('./assets/images/h1-banner01.jpg')] bg-no-repeat bg-cover  h-[30vh] md:h-[30vh] lg:h-[60vh] w-[100%] lg:w-[30%] rounded-lg">
           <div className="ml-8 w-[50%] mt-10 flex justify-center items-start flex-col">
             <div className="flex justify-center items-start flex-col space-y-6">
               <h2 className=" lg:text-5xl text-2xl font-bold">
@@ -84,7 +84,7 @@ const ProductCards = () => {
             </div>
           </div>
         </div>
-        <div className="bg-[url('./assets/images/h1-banner04.jpg')] bg-no-repeat bg-cover h-[40vh] lg:h-[60vh] w-[100%] lg:w-[30%] rounded-lg">
+        <div className="bg-[url('./assets/images/h1-banner04.jpg')] bg-no-repeat bg-cover h-[30vh] md:h-[30vh] lg:h-[60vh] w-[100%] lg:w-[30%] rounded-lg">
           <div className="ml-8 mt-10 flex justify-center items-start flex-col">
             <div className="flex justify-center items-start flex-col md:space-y-6 space-y-4">
               <h2 className=" lg:text-5xl text-2xl font-bold">
