@@ -15,7 +15,7 @@ const PopularCategories = () => {
           >
             <div className="flex items-center justify-center">
               <div className="flex justify-center items-center flex-col space-y-4">
-                <div className="popular-categories__image">
+                <div>
                   <Image
                     height={100}
                     width={250}

@@ -23,13 +23,24 @@ import image33 from './assets/images/product-01-300x300.jpg';
 import image34 from './assets/images/product-17-1-300x300.jpg';
 import image35 from './assets/images/product-16-300x300.jpg';
 import image36 from './assets/images/product-07-300x300.jpg';
-import image41 from './assets/images/categorios-1.jpg'
-import image42 from './assets/images/categorios-2.jpg'
-import image43 from './assets/images/categorios-3.jpg'
-import image44 from './assets/images/categorios-4.jpg'
-import image45 from './assets/images/categorios-5.jpg'
-import image46 from './assets/images/categorios-6.jpg'
-import image47 from './assets/images/categorios-7.jpg'
+import image41 from './assets/images/categorios-1.jpg';
+import image42 from './assets/images/categorios-2.jpg';
+import image43 from './assets/images/categorios-3.jpg';
+import image44 from './assets/images/categorios-4.jpg';
+import image45 from './assets/images/categorios-5.jpg';
+import image46 from './assets/images/categorios-6.jpg';
+import image47 from './assets/images/categorios-7.jpg';
+import image51 from './assets/images/blog-1-330x208.jpg';
+import image52 from './assets/images/blog-6-330x208.jpg';
+import image53 from './assets/images/blog-7-330x208.jpg';
+import image54 from './assets/images/blog-8-330x208.jpg';
+import image55 from './assets/images/blog-1-330x208.jpg';
+import image61 from './assets/images/testimonials-4.jpg';
+import image62 from './assets/images/testimonials-5.jpg';
+import image63 from './assets/images/testimonials-6.jpg';
+import image64 from './assets/images/testimonials-4.jpg';
+import image65 from './assets/images/testimonials-7.jpg';
+
 
 
 
@@ -110,9 +121,9 @@ export const products: Product[] = [
 
 interface FeaturedBrand {
   image1: StaticImageData;
-  alt1:string;
+  alt1: string;
   image2: StaticImageData;
-  alt2:string;
+  alt2: string;
 }
 
 export const FeaturedBrandProducts: FeaturedBrand[] = [
@@ -288,31 +299,109 @@ export interface PopularCategoryDataArray {
 
 export const popularCategoryData: PopularCategoryDataArray[] = [
   {
-    image:image41,
+    image: image41,
     category: "Device"
   },
   {
-    image:image42,
+    image: image42,
     category: "Eyewear"
   },
   {
-    image:image43,
+    image: image43,
     category: "Otc Deals"
   },
   {
-    image:image44,
+    image: image44,
     category: "Aayush"
   },
   {
-    image:image45,
+    image: image45,
     category: "Diabetes"
   },
   {
-    image:image46,
+    image: image46,
     category: "Eyewear"
   },
   {
-    image:image47,
+    image: image47,
     category: "Covid Essentials"
   }
 ]
+
+
+export interface BlogData {
+  image: StaticImageData;
+  date: string;
+  topic: string;
+}
+
+export const blogData: BlogData[] = [
+  {
+    image: image51,
+    date: "14-Oct-2020",
+    topic: "Hypertension: Most Commonly Asked",
+  },
+  {
+    image: image52,
+    date: "14-Dec-2020",
+    topic: "Know All About Robotic Knee Replacement",
+  },
+  {
+    image: image55,
+    date: "29-Dec-2020",
+    topic: "Can you be hospitalised due to asthama?",
+  },
+  {
+    image: image53,
+    date: "24-Oct-2020",
+    topic: "Understanding Different Types of Bone",
+  },
+  {
+    image: image54,
+    date: "15-Dec-2020",
+    topic: "Can a Newborn Baby Have Low Sugar Levels?",
+  },
+ 
+];
+
+
+export interface FeedbackData {
+  image: StaticImageData;
+  feedback:string;
+  date: string;
+  name: string;
+}
+
+export const feedbackData: FeedbackData[] = [
+  {
+    image: image61,
+    name:"Eliana Watson",
+    date: "14-Oct-2020",
+    feedback: "Medilazar pharmacy is the best one. Staffs are so supportive and behaved. Medicine price is genuine. Thanks",
+  },
+  {
+    image: image62,
+    name:"Rajashri Sarkar",
+    date: "14-Dec-2020",
+    feedback: "Medilazar pharmacy is the best one. Staffs are so supportive and behaved. Medicine price is genuine. Thanks",
+  },
+  {
+    image: image65,
+    name:"Elizabeth",
+    date: "29-Dec-2020",
+    feedback: "Medilazar pharmacy is the best one. Staffs are so supportive and behaved. Medicine price is genuine. Thanks",
+  },
+  {
+    image: image64,
+    name:"Emma stone",
+    date: "15-Dec-2020",
+    feedback: "Medilazar pharmacy is the best one. Staffs are so supportive and behaved. Medicine price is genuine. Thanks",
+  },
+  {
+    image: image63,
+    name:"Jenny Smith",
+    date: "24-Oct-2020",
+    feedback: "Medilazar pharmacy is the best one. Staffs are so supportive and behaved. Medicine price is genuine. Thanks",
+  }, 
+ 
+];
