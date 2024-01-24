@@ -1,10 +1,10 @@
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { IoStar } from "react-icons/io5";
-import { IoCart } from "react-icons/io5";
 import { FaHeart } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
+import AddToCart from "./AddToCart";
 
 interface SingleProductCardProps {
   image: StaticImageData;
@@ -67,12 +67,7 @@ const SingleProductCard: React.FC<SingleProductCardProps> = ({
               <span className="line-through text-gray-500 ml-4">${mrp}</span>
             </p>
           </div>
-          <div className="flex p-1 md:p-2 justify-start space-x-2 group items-center hover:bg-cyan-500 transition hover:text-white rounded-3xl mt-5 md:mt-10 w-[140px] md:w-[200px] cursor-pointer">
-            <div className="p-2 bg-cyan-500 rounded-full text-white">
-              <IoCart className="text-lg md:text-xl" />
-            </div>
-            <h4 className="font-bold text-xs md:text-sm">ADD TO CART</h4>
-          </div>
+         <AddToCart />
         </div>
       </div>
     </div>
@@ -80,3 +75,4 @@ const SingleProductCard: React.FC<SingleProductCardProps> = ({
 };
 
 export default SingleProductCard;
+

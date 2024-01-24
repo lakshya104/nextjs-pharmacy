@@ -1,16 +1,7 @@
-"use client";
+"use client"
 import React from "react";
-import Autoplay from "embla-carousel-autoplay";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import SingleProductCard from "./SingleProductCard";
-import { products } from "../staticData";
 import type { Product } from "../staticData";
+import { ShadcnCarousel } from "./ShadcnCarousel";
 
 interface ProductCarouselProps {
   title: string;
@@ -43,49 +34,3 @@ const ProductCarousel: React.FC<ProductCarouselProps> = ({
 
 export default ProductCarousel;
 
-interface ShadcnCarouselProps {
-  productsPrimary: Product[];
-}
-
-export const ShadcnCarousel: React.FC<ShadcnCarouselProps> = ({
-  productsPrimary,
-}) => {
-  return (
-    <Carousel
-      opts={{
-        align: "start",
-        loop: true,
-      }}
-      plugins={[
-        Autoplay({
-          delay: 2000,
-        }),
-      ]}
-      className="w-[280px] md:w-[750px] lg:w-[1080px] m-auto "
-    >
-      <CarouselContent>
-        {productsPrimary.map((item, index) => (
-          <CarouselItem
-            key={index}
-            className="basis-[100%] md:basis-1/2 lg:basis-1/4"
-          >
-            <div className="p-1">
-              <SingleProductCard
-                image={item.image}
-                imageAlt={item.imageAlt}
-                discount={item.discount}
-                category={item.category}
-                subCategory={item.subCategory}
-                productName={item.productName}
-                mrp={item.mrp}
-                actualPrice={item.actualPrice}
-              />
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious className="lg:block hidden" />
-      <CarouselNext className="lg:block  hidden" />
-    </Carousel>
-  );
-};

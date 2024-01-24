@@ -4,7 +4,7 @@ import { shuffledProducts } from '../staticData'
 
 const HealthProduct = () => {
   return (
-    <ProductCarousel title='Health Product' timer={null} productArray={shuffledProducts} />
+    <ProductCarousel title='Health Products' timer={null} productArray={shuffledProducts} />
   )
 }
 

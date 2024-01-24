@@ -23,6 +23,14 @@ import image33 from './assets/images/product-01-300x300.jpg';
 import image34 from './assets/images/product-17-1-300x300.jpg';
 import image35 from './assets/images/product-16-300x300.jpg';
 import image36 from './assets/images/product-07-300x300.jpg';
+import image41 from './assets/images/categorios-1.jpg'
+import image42 from './assets/images/categorios-2.jpg'
+import image43 from './assets/images/categorios-3.jpg'
+import image44 from './assets/images/categorios-4.jpg'
+import image45 from './assets/images/categorios-5.jpg'
+import image46 from './assets/images/categorios-6.jpg'
+import image47 from './assets/images/categorios-7.jpg'
+
 
 
 export interface Product {
@@ -272,3 +280,39 @@ export const combinedArray: Product[] = [
     actualPrice: 24.00,
   }
 ];
+
+export interface PopularCategoryDataArray {
+  image: StaticImageData;
+  category: string;
+}
+
+export const popularCategoryData: PopularCategoryDataArray[] = [
+  {
+    image:image41,
+    category: "Device"
+  },
+  {
+    image:image42,
+    category: "Eyewear"
+  },
+  {
+    image:image43,
+    category: "Otc Deals"
+  },
+  {
+    image:image44,
+    category: "Aayush"
+  },
+  {
+    image:image45,
+    category: "Diabetes"
+  },
+  {
+    image:image46,
+    category: "Eyewear"
+  },
+  {
+    image:image47,
+    category: "Covid Essentials"
+  }
+]
