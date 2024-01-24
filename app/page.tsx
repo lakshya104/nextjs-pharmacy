@@ -22,8 +22,8 @@ export default function Home() {
       <PopularCategories />
       <TrendingProduct />
       <Blog />
-      <Feedback />
       <CounterComponent />
+      <Feedback />
     </>
   );
 }
