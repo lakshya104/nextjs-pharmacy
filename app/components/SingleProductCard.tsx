@@ -28,15 +28,15 @@ const SingleProductCard: React.FC<SingleProductCardProps> = ({
   actualPrice,
 }) => {
   return (
-    <div className="p-8 m-2 transition hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] w-[200px] md:w-[300px] group ">
-      <div className="flex justify-end items-center h-[400px] md:h-[480px] flex-col relative ">
+    <div className="p-8 m-2 transition hover:shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] h-[400px] md:h-[480px] w-[250px] group ">
+      <div className="flex justify-end items-center h-full flex-col relative ">
         <div className="daily-deal--product__image">
           <Image width={300} height={300} src={image} alt={imageAlt} />
         </div>
         <div className="absolute top-0 left-0 px-2 py-1 bg-green-500 rounded-lg">
           <span className="text-white">{discount}%</span>
         </div>
-        <div className="absolute top-0 right-0 flex justify-center items-center flex-col space-y-4">
+        <div className="absolute top-0 right-0 flex justify-center items-center flex-col space-y-2">
           <div className="md:p-2.5 p-1 bg-gray-200 rounded-full hover:text-white hover:bg-cyan-500">
             <FaHeart />
           </div>

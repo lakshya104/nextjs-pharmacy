@@ -1,8 +1,8 @@
 import Banner from "./components/Banner";
 import  DailyDeals  from "./components/DailyDeals";
+import FeaturedBrand from "./components/FeaturedBrand";
 import ProductCards from "./components/ProductCards";
 import Services from "./components/Services";
-import SingleProductCard from "./components/SingleProductCard";
 
 export default function Home() {
   return (
@@ -10,8 +10,8 @@ export default function Home() {
       <Banner />
       <ProductCards />
       <Services />
-      {/* <SingleProductCard /> */}
       <DailyDeals />
+      <FeaturedBrand />
     </>
   );
 }

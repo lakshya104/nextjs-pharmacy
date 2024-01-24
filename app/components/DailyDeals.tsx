@@ -14,10 +14,10 @@ import products from "../staticData";
 const DailyDeals = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="flex p-5 justify-center md:justify-center flex-col md:flex-row space-y-4 items-center space-x-2">
+      <div className="flex p-7 justify-center flex-col md:flex-row space-y-4 md:space-y-0 items-center space-x-2">
         <h2 className="md:text-4xl text-2xl font-bold">Deal Of The Day </h2>
         <span className="text-white bg-pink-600 rounded-2xl px-4 text-lg md:text-xl py-2 font-bold">
-          End in: 29:23:54
+          Ends in: 29:23:54
         </span>
       </div>
 
@@ -42,13 +42,13 @@ export function ShadcnCarousel() {
           delay: 2000,
         }),
       ]}
-      className="w-[200px] md:w-[750px] lg:w-[1024px] m-auto "
+      className="w-[280px] md:w-[750px] lg:w-[1080px] m-auto "
     >
       <CarouselContent>
         {products.map((item, index) => (
           <CarouselItem
             key={index}
-            className="sm:basis-[100%] md:basis-1/2 lg:basis-1/3"
+            className="basis-[100%] md:basis-1/2 lg:basis-1/4"
           >
             <div className="p-1">
               <SingleProductCard
