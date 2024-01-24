@@ -54,7 +54,7 @@ const SingleProductCard: React.FC<SingleProductCardProps> = ({
           <h3 className="md:text-xl text-lg font-bold">
             <a href="#">{productName}</a>
           </h3>
-          <div className="flex justify-start text-yellow-400 font-bold text-lg md:text-2xl space-x-1 mt-5 mb-2 items-center">
+          <div className="flex justify-start text-yellow-400 text-sm md:text-lg space-x-1 mt-5 mb-2 items-center">
             <IoStar />
             <IoStar />
             <IoStar />
@@ -62,16 +62,16 @@ const SingleProductCard: React.FC<SingleProductCardProps> = ({
             <IoStar />
           </div>
           <div className="daily-deal--product__price">
-            <p className="text-red-500 text-lg md:text-2xl font-bold">
+            <p className="text-red-500 text-sm md:text-lg font-bold">
               ${actualPrice}
               <span className="line-through text-gray-500 ml-4">${mrp}</span>
             </p>
           </div>
           <div className="flex p-1 md:p-2 justify-start space-x-2 group items-center hover:bg-cyan-500 transition hover:text-white rounded-3xl mt-5 md:mt-10 w-[140px] md:w-[200px] cursor-pointer">
             <div className="p-2 bg-cyan-500 rounded-full text-white">
-              <IoCart className="text-xl md:text-3xl" />
+              <IoCart className="text-lg md:text-xl" />
             </div>
-            <h4 className="font-bold text-xs md:text-lg">ADD TO CART</h4>
+            <h4 className="font-bold text-xs md:text-sm">ADD TO CART</h4>
           </div>
         </div>
       </div>

@@ -11,13 +11,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import { FeaturedBrandProducts } from "../staticData";
 
 const FeaturedBrand = () => {
   return (
-    <section className="bg-gray-100 h-[50vh]">
+    <section className="bg-gray-100">
       <div className="flex items-center justify-center flex-col space-y-4 p-5 w-[100%]">
         <h2 className="text-2xl font-bold">Featured Brands</h2>
-
         <ShadcnCarouselV2 />
       </div>
     </section>
@@ -41,25 +41,25 @@ export function ShadcnCarouselV2() {
       className="w-[280px] md:w-[750px] lg:w-[1080px] m-auto"
     >
       <CarouselContent>
-        {Array.from({ length: 5 }).map((_, index) => (
+        {FeaturedBrandProducts.map((item, index) => (
           <CarouselItem
             key={index}
             className="basis-[100%] md:basis-1/2 lg:basis-1/4"
           >
             <div className="w-[280px] md:w-[240px] h-[40vh] relative p-1">
               <Image
-                src={image1}
+                src={item.image1}
                 className="cursor-pointer rounded-lg transition duration-500 hover:rounded-xl hover:scale-110"
-                alt="pills"
+                alt={item.alt1}
                 width={305}
                 height={210}
               />
               <div className="absolute flex items-center justify-center w-[200px] bg-white rounded-lg p-5 md:right-5 right-10 top-28">
                 <a href="#">
                   <Image
-                    src={image2}
+                    src={item.image2}
                     className=" transition duration-500 hover:scale-110"
-                    alt="stomach"
+                    alt={item.alt2}
                     width={120}
                     height={80}
                   />
