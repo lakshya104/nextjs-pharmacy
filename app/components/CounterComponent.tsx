@@ -3,12 +3,13 @@ import React from "react";
 const CounterComponent = () => {
   return (
     <section className="counter">
-      <div className="container">
-        <div className="row align-center">
+      <div className="p-10">
+        <div className="flex justify-evenly items-center flex-col md:flex-row space-y-10">
           <div className="col-md-3 col-sm-6">
-            <div className="counter__items">
+            <div>
               <div className="counter__items__img">
                 <svg
+                  className="w-[70px] h[70px]"
                   enable-background="new 0 0 18.09 17.5"
                   viewBox="0 0 18.09 17.5"
                   xmlns="http://www.w3.org/2000/svg"
@@ -102,9 +103,11 @@ const CounterComponent = () => {
               </div>
               <div className="counter__items__name">
                 <a href="">
-                  <h3>50 Lalk +</h3>
+                  <h3 className="text-3xl font-bold hover:text-cyan-500">
+                    50 Lalk +
+                  </h3>
                 </a>
-                <p>Families Served</p>
+                <p className="text-gray-500">Families Served</p>
               </div>
             </div>
           </div>
@@ -112,6 +115,7 @@ const CounterComponent = () => {
             <div className="counter__items">
               <div className="counter__items__img">
                 <svg
+                  className="w-[70px] h[70px]"
                   enable-background="new 0 0 19.77 15.94"
                   viewBox="0 0 19.77 15.94"
                   xmlns="http://www.w3.org/2000/svg"
@@ -194,9 +198,11 @@ const CounterComponent = () => {
               </div>
               <div className="counter__items__name">
                 <a href="">
-                  <h3>1.5 Crore +</h3>
+                  <h3 className="text-3xl font-bold hover:text-cyan-500">
+                    1.5 Crore +
+                  </h3>
                 </a>
-                <p>Orders Delivered</p>
+                <p className="text-gray-500">Orders Delivered</p>
               </div>
             </div>
           </div>
@@ -204,6 +210,7 @@ const CounterComponent = () => {
             <div className="counter__items">
               <div className="counter__items__img">
                 <svg
+                  className="w-[70px] h[70px]"
                   enable-background="new 0 0 16.64 18.21"
                   viewBox="0 0 16.64 18.21"
                   xmlns="http://www.w3.org/2000/svg"
@@ -246,9 +253,11 @@ const CounterComponent = () => {
               </div>
               <div className="counter__items__name">
                 <a href="">
-                  <h3>22000 +</h3>
+                  <h3 className="text-3xl font-bold hover:text-cyan-500">
+                    22000 +
+                  </h3>
                 </a>
-                <p>Pincodes Served</p>
+                <p className="text-gray-500">Pincodes Served</p>
               </div>
             </div>
           </div>
@@ -256,6 +265,7 @@ const CounterComponent = () => {
             <div className="counter__items">
               <div className="counter__items__img">
                 <svg
+                  className="w-[70px] h[70px]"
                   enable-background="new 0 0 16.13 16.56"
                   viewBox="0 0 16.13 16.56"
                   xmlns="http://www.w3.org/2000/svg"
@@ -346,9 +356,11 @@ const CounterComponent = () => {
               </div>
               <div className="counter__items__name">
                 <a href="">
-                  <h3>10 Lakl +</h3>
+                  <h3 className="text-3xl font-bold hover:text-cyan-500">
+                    10 Lakl +
+                  </h3>
                 </a>
-                <p>Medicines Available</p>
+                <p className="text-gray-500">Medicines Available</p>
               </div>
             </div>
           </div>

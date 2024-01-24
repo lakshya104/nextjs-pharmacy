@@ -23,7 +23,7 @@ export default function Home() {
       <TrendingProduct />
       <Blog />
       <Feedback />
-      {/* <CounterComponent /> */}
+      <CounterComponent />
     </>
   );
 }
