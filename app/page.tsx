@@ -25,7 +25,7 @@ export default function Home() {
       <Blog />
       <CounterComponent />
       <Feedback />
-      <SignUp />
+      <SignUp />  
     </>
   );
 }
