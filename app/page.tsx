@@ -8,6 +8,7 @@ import HealthProduct from "./components/HealthProduct";
 import PopularCategories from "./components/PopularCategories";
 import ProductCards from "./components/ProductCards";
 import Services from "./components/Services";
+import SignUp from "./components/SignUp";
 import TrendingProduct from "./components/TrendingProduct";
 
 export default function Home() {
@@ -24,7 +25,7 @@ export default function Home() {
       <Blog />
       <CounterComponent />
       <Feedback />
-      
+      <SignUp />
     </>
   );
 }

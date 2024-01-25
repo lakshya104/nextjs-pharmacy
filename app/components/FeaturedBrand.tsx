@@ -17,7 +17,7 @@ const FeaturedBrand = () => {
                 key={index}
                 className="basis-[100%] md:basis-1/2 lg:basis-1/4"
               >
-                <div className="w-[280px] md:w-[240px] h-[40vh] relative p-1">
+                <div className="w-[280px] md:w-[240px] h-[30vh] relative p-1">
                   <Image
                     src={item.image1}
                     className="cursor-pointer rounded-lg transition duration-500 hover:rounded-xl hover:scale-110"
